@@ -18,3 +18,4 @@ people = 4
 
 print("빵의 개수 :" + str(bread//people))
 print("남은 빵의 개수 :" + str(bread%people))
+
