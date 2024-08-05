@@ -1,4 +1,5 @@
 # 비교연산
+'''
 b1=(2>1)
 print(b1)
 print(type(b1))
@@ -28,4 +29,20 @@ under_20 = age < 20
 
 print(under_20)
 print(not under_20)
+'''
 
+#논리곱
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False,'\n')
+
+#논리합
+print(True or True)
+print(True or False)
+print(False or True)
+print(False or False)
+
+#논리 부정
+print(not True)
+print(not False)
