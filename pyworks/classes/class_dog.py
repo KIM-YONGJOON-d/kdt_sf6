@@ -3,6 +3,15 @@ class Dog:
     def __init__(self, name):
         self.name = name
 
+dogs = [
+    Dog('멍이'),
+    Dog('해피'),
+    Dog('사랑이'),
+]
+
+for i in dogs:
+    print(i.name)
+
 dog1 = Dog("송이")
 dog2 = Dog("백구")
 
