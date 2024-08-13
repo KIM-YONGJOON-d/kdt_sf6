@@ -1,9 +1,11 @@
 import random
 
-# random1 = []
-# for i in range(6):
-#     random1.append(random.randint(1,45))
-#     random1.sort()
-#
-# print(random1)
+lotto = []
+while len(lotto) < 6:
+    a = random.randint(1, 45)
+    if a not in lotto:
+        lotto.append(a)
+
+lotto.sort()
+print(lotto)
 
