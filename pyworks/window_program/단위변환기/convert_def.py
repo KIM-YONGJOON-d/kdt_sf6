@@ -8,6 +8,7 @@ def convert():
 
 root = Tk()
 root.title("단위 변환기")
+
 root.geometry("250x100+200+200")
 
 Label(root, text='     KB').grid(row=0, column=0)
