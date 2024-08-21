@@ -1,15 +1,21 @@
 # 컴퓨터 작은 사전 만들기
 from tkinter import *
 def click():
-    word = entry.get()
-    dic[word]
-    text.insert(END, dic[word])
+    try:
+        word = entry.get()
+        definition = dic[word]
+        text.delete(0.0,END)
+
+    except KeyError:
+        text.insert(END, "단어를 찾을 수 없습니다.")
+    text.insert(END, definition)
 
 dic = {
     "비트" : "0이나 1의 값을 가지는 컴퓨터 데이터의 최소 단위",
     "변수" : "어떤 1개의 자료를 저장하기 위한 메모리 할당 공간",
     "리스트" : "여러 개의 연속적인 자료를 저장하는 자료구조"
 }
+
 
 root = Tk()
 root.title("컴퓨터 소사전")
