@@ -7,7 +7,7 @@ def click():
     name_list = ['김용준', '김용혁', '임현수', '윤종관', '정지은', '오민선', '최준영',
                  '윤다빈', '박민우', '조형주', '고지수']
     choice_list = []
-    while len(choice_list) < 3:
+    while len(choice_list) < 4:
         choice = random.choice(name_list)
         if choice not in choice_list:
             choice_list.append(choice)
